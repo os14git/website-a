@@ -1,0 +1,162 @@
+
+
+
+@font-face {
+  font-family: "capfont";
+  src: url("fonts/ITC\ Korinna\ Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+abbr {
+position: relative;
+}
+
+abbr:hover::after {
+position: sticky;
+display: inline;
+background: rgb(115, 115, 115);
+border: solid rgb(214, 149, 247);
+content: attr(title);
+font-family: 'capfont', sans-serif;
+font-size: 125%;
+font-weight: 700;
+color: rgb(226, 255, 6);
+text-shadow: -2px -2px 3px #00055e, 2px -2px 3px #00055e, -2px 2px 3px #00055e, 2px 2px 3px #00055e;
+}
+
+
+body {
+  background:
+    linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url(images/capcombanner.png) center center;
+    width: fit-content;
+    height: fit-content;
+    background-size: 100%;
+  background-position: top;
+  
+}
+
+h1 {
+  font-family: 'capfont', sans-serif;
+  font-size: 500%; 
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+  padding: 0%;
+  color: rgb(239, 208, 2);
+  text-shadow: -2px -2px 5px #00055e, 2px -2px 5px #00055e, -2px 2px 5px #00055e, 2px 2px 5px #00055e;
+}
+
+
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0%;
+  width: 60%;
+  height: 30%;
+}
+
+ .gridcontainer {
+    background: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-column-gap: 0px;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: minmax(100px, auto);
+ }
+.banner {
+  
+  width: 100%;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+.subcontainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-row-gap: 5px;
+  justify-items: center;
+  align-items: center;
+  background:
+    /* linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), */
+    url(images/capcombg.png) no-repeat center center;
+    
+    width: fit-content;
+    height: fit-content;
+    
+    transition: 0.5s ease-out 0.2s;
+  background-size: cover;
+  background-position: center; /* Centers the image within the container */
+  background-repeat: no-repeat;
+  padding: 5%;
+  
+ }
+
+#gamephotostl, #gamephotostr, #gamephotosbl, #gamephotosbr {
+  margin: 5% 5% 5% 5%;
+  width: 85%;
+  height: 30%;
+  margin: none;
+  border: 5px;
+  border-style:solid;
+  border-color:rgb(127, 101, 136);
+  justify-items: center;
+  align-items: center;
+}
+
+.subcontainer:has(#gamephotostl:hover) {
+  background: url(images/lpbg.jpg) no-repeat center center;
+    transition: 0.5s ease-out 0.2s;
+    width: fit-content;
+    height: fit-content;
+    background-size: cover;
+}
+.subcontainer:has(#gamephotostr:hover) {
+  background: url(images/deadrisingfrank.png) no-repeat center center;
+    transition: 0.5s ease-out 0.2s;
+    width: fit-content;
+    height: fit-content;
+    background-size: cover;
+}
+.subcontainer:has(#gamephotosbl:hover) {
+  background: url(images/mhbg2.jpg) no-repeat center center;
+    transition: 0.5s ease-out 0.2s;
+    width: fit-content;
+    height: fit-content;
+    background-size: cover;
+}
+.subcontainer:has(#gamephotosbr:hover) {
+  background: url(images/dmc5bg.png) no-repeat center center;
+    transition: 0.5s ease-out 0.2s;
+    width: fit-content;
+    height: fit-content;
+    background-size: cover;
+}
+
+#gamephotostl:hover {
+  transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    border-color: rgb(185, 255, 254);; 
+    box-shadow: 0 0 15px rgb(185, 255, 254);
+}
+#gamephotosbl:hover {
+  transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    border-color: rgb(0, 98, 29); 
+    box-shadow: 0 0 15px rgb(79, 148, 111);
+}
+#gamephotostr:hover {
+  transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    border-color: rgb(94, 14, 119); 
+    box-shadow: 0 0 15px rgb(60, 2, 146);
+}
+#gamephotosbr:hover {
+  transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    border-color: rgb(106, 0, 0);
+    box-shadow: 0 0 15px rgb(167, 70, 70);
+}
